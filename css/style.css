@@ -84,3 +84,28 @@
 .ani {
   animation: good 1s linear forwards;
 }
+
+.fix {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.694);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fix button {
+  background-color: #6563ff !important;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+}
+
+.fix h1 {
+  color: white;
+}
+
+.vi {
+  visibility: hidden;
+}

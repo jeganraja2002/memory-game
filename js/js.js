@@ -177,6 +177,9 @@ const good = document.querySelector(".good");
 const audio = document.getElementById("audio");
 const error = document.getElementById("error");
 const goodA = document.getElementById("good");
+const bg = document.getElementById("bg");
+const reload = document.getElementById("reload");
+
 let count = 0;
 let first = 0;
 
@@ -198,8 +201,11 @@ function change(id, identify) {
     parent.innerHTML = "";
     main(list);
     if (list.every((e) => e.boolelan === true)) {
+      goodA.play();
+      good.classList.add("ani");
       setTimeout(() => {
-        location.reload();
+        bg.play();
+        reload.classList.remove("vi");
       }, 1000);
     } else if (first !== identify) {
       parent.style.pointerEvents = "none";
@@ -226,4 +232,8 @@ function change(id, identify) {
       }, 200);
     }
   }
+}
+
+function New() {
+  location.reload();
 }
