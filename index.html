@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TO-DO-LIST</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body style="background-color: #6563ff">
+    <section>
+      <div>
+        <audio id="audio">
+          <source src="audio/audio.mp3"></source>
+        </audio>
+        <audio id="error">
+          <source src="audio/error.wav"></source>
+        </audio>
+        <audio id="good">
+          <source src="audio/good.mp3"></source>
+        </audio>
+      </div>
+      <div class="row1 align-items-center justify-content-center vh-100">
+        <div class="col-12 col-md-9 col-lg-4" style="position: relative">
+          <h2 class="text-center" id="wrong" style="color: white">
+            Memory Game
+          </h2>
+          <div class="good">Good</div>
+          <div class="shadow p-2 rounded" style="background-color: white">
+            <div class="parent row1"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/js.js"></script>
+  </body>
+</html>
