@@ -210,6 +210,7 @@ function change(id, identify) {
     } else if (first !== identify) {
       parent.style.pointerEvents = "none";
       wrong.classList.add("shake");
+      window.navigator.vibrate([400]);
       error.play();
       setTimeout(() => {
         list = list.map((e) => {
